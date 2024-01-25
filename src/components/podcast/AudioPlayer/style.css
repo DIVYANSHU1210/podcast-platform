@@ -1,0 +1,41 @@
+.audioPlayer{
+    width:100%;
+    background-color: rgba(14, 2, 21, 0.5);
+    position: fixed;
+    bottom: 0px;
+    left :0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.displayImage{
+    width:30px !important;
+    height: 30px;
+}
+
+.duration-flex{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    gap: .5rem;
+    padding-inline: 2rem;
+}
+
+.duration-range{
+    width:100%;
+    filter: hue-rotate(30deg);
+    cursor: pointer;
+}
+
+.volume-flex{
+    display:flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.volume-range{
+    filter: hue-rotate(50deg);
+    cursor: pointer;
+}

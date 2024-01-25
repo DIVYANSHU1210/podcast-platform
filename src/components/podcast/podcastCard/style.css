@@ -1,0 +1,33 @@
+.podcastCard{
+    border-radius: .7rem;
+    border: none;
+
+    background: linear-gradient(
+        177.7deg,
+        rgba(58, 129, 191, 0.3) 1.63%,
+        rgba(65, 48, 90, 0.009) 148.18%
+    );
+    padding: 1rem;
+
+    opacity: 0.7;  
+    transition: all .5s ease;  
+
+}
+
+img{
+    height : 250px;
+    width : 250px;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(200, 196, 196);
+}
+
+
+.podcastCard:hover{
+    opacity: 1;
+    color: white;
+}
