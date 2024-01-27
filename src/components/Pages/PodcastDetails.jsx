@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getDoc, doc, onSnapshot, query, collection } from "firebase/firestore";
+import { getDoc, doc, onSnapshot, query, collection, orderBy } from "firebase/firestore";
 import { auth, db } from "../../firebase";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -43,7 +43,7 @@ function PodcastDetails() {
 
   useEffect(()=>{
       const unsubscribe = onSnapshot(
-        query(collection(db, "podcasts", id, "episodes")),
+        query(collection(db, "podcasts", id, "episodes"), orderBy("name")),
         (querySnapshot) =>{
           const episodeData = [];
           querySnapshot.forEach((doc)=>{
